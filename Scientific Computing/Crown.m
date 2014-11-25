@@ -1,0 +1,17 @@
+theta = -pi:0.05:pi;
+CrownA = sin(theta)./theta;
+subplot(1, 3, 1);
+plot(theta, CrownA, 'r-o');
+title('Crown - (a)');
+CrownB = abs(CrownA);
+subplot(1, 3, 2);
+plot(theta, CrownB, 'b-o');
+title('Crown - (b)');
+subplot(1, 3, 3);
+x = cos(theta);
+y = sin(theta);
+z = 0.5+abs(sin(4*theta)./(theta/2))/2;
+stem3(x, y, z, 'fill');
+title('Crown - (c)');
+xlabel('X-axis');
+ylabel('Y-axis');
