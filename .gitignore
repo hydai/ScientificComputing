@@ -1,0 +1,9 @@
+*.ppt
+*.pptx
+*.db
+*.pdf
+sap/
+machineLearning/
+TMP/
+utility/
+101062124*
